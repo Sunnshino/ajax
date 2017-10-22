@@ -8,8 +8,10 @@ function ajax(opt) {
     opt.success = opt.success || function() {};
     var xmlHttp = null;
     if (XMLHttpRequest) {
+    //chrome,firefox,ie7+控件
         xmlHttp = new XMLHttpRequest();
     } else {
+    //ie控件
         xmlHttp = new ActiveXObject('Microsoft.XMLHTTP');
     }
     var params = [];
